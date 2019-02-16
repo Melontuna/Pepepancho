@@ -1,4 +1,7 @@
 # Pepepancho
+
+remember to unzip the fonts and install them boys, then reset your computer
+
 ok, so i don't know how to use github, so let me explain myself real quick, you got all your conky stuff figured out? no?
 are you some kind of noobish dude/dudette who just wants to make ubuntu look pretty but doesn't know how to and will probably make 
 his/her kernel explode in flames? that's what i thought, otherwise you wouldn't be reading this file, lmao, okay, basic stuff:
