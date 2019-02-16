@@ -1,0 +1,102 @@
+background yes
+use_xft yes
+xftfont Roboto:size=9
+xftalpha 0.8
+update_interval 1
+total_run_times 0
+own_window yes
+own_window_transparent yes
+##############################################
+# Compositing tips:
+# Conky can play strangely when used with
+# different compositors. I have found the
+# following to work well, but your mileage
+# may vary. Comment/uncomment to suit.
+##############################################
+## no compositor
+#own_window_type override
+#own_window_argb_visual no
+
+## xcompmgr
+#own_window_type override
+#own_window_argb_visual yes
+
+## cairo-compmgr
+own_window_type desktop
+own_window_argb_visual yes
+##############################################
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+stippled_borders no
+border_margin 0
+border_width 10
+default_color 000000
+default_shade_color 000000
+default_outline_color 000000
+alignment top_middle
+minimum_size 0 0
+maximum_width 800
+gap_x 0
+gap_y 50
+alignment top_middle
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 2
+short_units yes
+text_buffer_size 2048
+use_spacer none
+override_utf8_locale yes
+#Blanco
+color0 FFFFFF
+#
+#Amarillo
+color1 FDCD01
+#
+#Naranja
+color2 FAA41B
+#
+#Durazno
+color3 F3732C
+#
+#Rojo
+color4 FF3719
+#
+#naranja cargado
+color5 EC1F1A
+#
+#Morado
+color6 9B1A36
+#
+#Cafe claro
+color7 561415
+#
+#Crema
+color8 FFE3B5
+#
+#Celeste
+color9 6FAEA3
+
+##############################################
+#  Output
+##############################################
+own_window_argb_value 0
+own_window_colour 000000
+TEXT
+###########################
+#LMXJVSD
+###########################
+${alignc}${color7}${voffset 0}${offset 0}${font Pincoyablack:size=75}${time %A}
+###########################
+#NUMERO DEL MES DEL AÑO
+###########################
+${alignc}${color5}${voffset -50}${offset 0}${font Pincoyablack:weight=Light:size=45}${time %d %B %Y}
+###########################
+#HORA MINUTO
+###########################
+${alignc}${color4}${voffset -10}${offset 70}${font Pincoyablack:size=45}${time %I}${color4}${font Pincoyablack:weight=Thin:size=45}:${time %M}
+
